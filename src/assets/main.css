@@ -22,14 +22,25 @@ a,
 }
 
 @media (min-width: 1024px) {
+  html {
+    height: 100%;
+  }
+
   body {
+    height: 100%;
+    overflow: hidden;
+    /* removes default style */
+    margin: 0px;
     display: flex;
-    place-items: center;
+    box-sizing: border-box;
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
